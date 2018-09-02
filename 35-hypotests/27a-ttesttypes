@@ -1,0 +1,14 @@
+Types of T - Test
+
+There are three main types of t-test:
+
+An Independent Samples t-test compares the means for two groups. It can be <, = , >
+
+
+A Paired sample t-test compares means from the same group at different times (say, one year apart).
+
+
+A One sample t-test tests the mean of a single group against a known mean
+
+#---------------------------
+One of the most common tests in statistics is the t-test, used to determine whether the means of two groups are equal to each other. The assumption for the test is that both groups are sampled from normal distributions with equal variances. The null hypothesis is that the two means are equal, and the alternative is that they are not. It is known that under the null hypothesis, we can calculate a t-statistic that will follow a t-distribution with n1 + n2 - 2 degrees of freedom. There is also a widely used modification of the t-test, known as Welch's t-test that adjusts the number of degrees of freedom when the variances are thought not to be equal to each other.
