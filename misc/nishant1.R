@@ -15,10 +15,13 @@ head(airline1)
 data<-full_join(airline1,delay, by = c("Airline.code" = "carrier"))
 
 write.csv(data, file = "data.csv")
+
+data = airline1
 str(data)
 data$CANCELLED <- factor(data$CANCELLED)
-setwd("D:\\Data Analytics\\IATA\\AirlineFlightsData")
+#setwd("D:\\Data Analytics\\IATA\\AirlineFlightsData")
 #Create user defined function for descriptive analysis
+
 var_Summ=function(x){
   if(class(x)=="numeric"){
     Var_Type=class(x)
@@ -64,7 +67,13 @@ var_Summ=function(x){
 
 #Vector of numaerical variables
 num_var= sapply(data,is.numeric)
+num_var
 Other_var= !sapply(data,is.numeric)
+
+#manual testing
+apply(data[num_var],2, quantile)
+apply(data[num_var],2, var_Summ)#works
+t(apply(data[num_var],2, var_Summ)) #will not work
 
 
 #Applying above defined function on numerical variables
