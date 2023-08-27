@@ -1,6 +1,0 @@
-# Variance
-
-
-var(mtcars$mpg)
-
-

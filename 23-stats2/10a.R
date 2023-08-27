@@ -1,6 +1,0 @@
-#Other Topics
-
-#scale
-
-#normalisation
-
